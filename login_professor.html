@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área da equipe | IRON HOUSE</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="Iron House - página inicial">
+      <span class="logo-mark">IH</span>
+      <span>IRON<span class="orange">HOUSE</span></span>
+    </a>
+    <a class="nav-login" href="index.html">Voltar ao início</a>
+  </header>
+
+  <main class="login-page">
+    <div class="login-layout">
+      <div class="login-heading">
+        <p class="eyebrow"><span></span> ACESSO IRON HOUSE</p>
+        <h1>ÁREA DA <span class="orange">EQUIPE.</span></h1>
+        <p>Entre com os dados da sua conta.</p>
+      </div>
+
+      <section class="login-box" aria-labelledby="team-heading">
+        <h2 id="team-heading">FAÇA SEU <span class="orange">LOGIN.</span></h2>
+        <p>Acesso para professores e funcionários.</p>
+        <form data-login-form>
+          <label for="team-email">E-mail</label>
+          <input type="email" id="team-email" name="email" placeholder="voce@academia.com" autocomplete="username" required>
+          <label for="team-password">Senha</label>
+          <input type="password" id="team-password" name="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+          <label for="profile">Perfil</label>
+          <select id="profile" name="profile" required>
+            <option value="">Selecione seu perfil</option>
+            <option value="professor">Professor(a)</option>
+            <option value="funcionario">Funcionário(a)</option>
+          </select>
+          <button class="button button-primary" type="submit">Entrar na área da equipe</button>
+        </form>
+        <p class="login-note" data-login-message aria-live="polite">A autenticação ainda não está conectada.</p>
+      </section>
+
+      <p class="back-link">É aluno? <a href="login_aluno.html">Acesse a área do aluno</a></p>
+      <a class="back-link" href="index.html">← Voltar para a página inicial</a>
+    </div>
+  </main>
+</body>
+</html>

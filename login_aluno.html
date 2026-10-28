@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do aluno | IRON HOUSE</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="Iron House - página inicial">
+      <span class="logo-mark">IH</span>
+      <span>IRON<span class="orange">HOUSE</span></span>
+    </a>
+    <a class="nav-login" href="index.html">Voltar ao início</a>
+  </header>
+
+  <main class="login-page">
+    <div class="login-layout">
+      <div class="login-heading">
+        <p class="eyebrow"><span></span> ACESSO IRON HOUSE</p>
+        <h1>ÁREA DO <span class="orange">ALUNO.</span></h1>
+        <p>Entre com os dados da sua conta.</p>
+      </div>
+
+      <section class="login-box" aria-labelledby="student-heading">
+        <h2 id="student-heading">FAÇA SEU <span class="orange">LOGIN.</span></h2>
+        <p>Acesse sua área de aluno com suas credenciais.</p>
+        <form data-login-form>
+          <label for="student-email">E-mail</label>
+          <input type="email" id="student-email" name="email" placeholder="voce@email.com" autocomplete="username" required>
+          <label for="student-password">Senha</label>
+          <input type="password" id="student-password" name="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+          <button class="button button-primary" type="submit">Entrar como aluno</button>
+        </form>
+        <p class="login-note" data-login-message aria-live="polite">A autenticação ainda não está conectada.</p>
+      </section>
+
+      <p class="back-link">É professor ou funcionário? <a href="login_professor.html">Acesse a área da equipe</a></p>
+      <a class="back-link" href="index.html">← Voltar para a página inicial</a>
+    </div>
+  </main>
+</body>
+</html>

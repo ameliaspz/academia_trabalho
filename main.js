@@ -1,0 +1,29 @@
+const menuToggle = document.querySelector("#menu-toggle");
+const nav = document.querySelector("#nav");
+
+if (menuToggle && nav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
+    menuToggle.textContent = isOpen ? "×" : "☰";
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Abrir menu");
+      menuToggle.textContent = "☰";
+    });
+  });
+}
+
+document.querySelectorAll("[data-login-form]").forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const message = form.parentElement.querySelector("[data-login-message]");
+    message.textContent =
+      "Formulário preenchido. A autenticação ainda não está conectada.";
+  });
+});
