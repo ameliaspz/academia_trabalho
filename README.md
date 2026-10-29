@@ -24,7 +24,7 @@ O projeto busca unir um visual simples e organizado com as principais informaç�
 
 ## Desenvolvedores
 
-Ana Amélia dos Santos Pereira - 01888433
-André Felipe Nunes da Silva - 01941091 
-Henrique de Almeida Santana - 01899273 
-Pedro Henrique Silva Vieira - 01880704 
+- Ana Amélia dos Santos Pereira - 01888433
+- André Felipe Nunes da Silva - 01941091 
+- Henrique de Almeida Santana - 01899273 
+- Pedro Henrique Silva Vieira - 01880704 
